@@ -88,3 +88,8 @@ button {
 	display: block;
 	float: right;
 }
+
+.card-placeholder,
+.column-card-list {
+	min-height: 100px;
+}

@@ -27,7 +27,7 @@ $(function () {
 		    $columnDelete.click(function() {
 		        self.removeColumn();
 		    });
-		    $columnAddCard.click(function(event) {
+		    $columnAddCard.click(function() {
 		        self.addCard(new Card(prompt("Enter the name of the card")));
 		    });
 
@@ -66,19 +66,19 @@ $(function () {
 
 		    // BINDING TO CLICK EVENT
 		    $cardDelete.click(function(){
-		           		self.removeCard();
+		        self.removeCard();
 		    });
 
 		    // COMBINING BLOCKS AND RETURNING THE CARD
 		    $card.append($cardDelete)
-		    		.append($cardDescription);
+		    	.append($cardDescription);
 
     		return $card;
 		}
 		
 		Card.prototype = {
 			removeCard: function() {
-			this.$element.remove();
+				this.$element.remove();
 			}
 		}
 	}
